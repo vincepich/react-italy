@@ -5,21 +5,13 @@ const Region = props => {
   const [srcImageProps, setSrcImageProps] = useState("");
 
   const onMouseEnterImage = () => {
-    setSrcImageProps(
-      `https://www.pngitem.com/pimgs/m/66-665642_cartina-geomorfologica-valle-d-aosta-clipart-png-comuni.png`
-    );
-    onSelectImage(
-      `https://www.pngitem.com/pimgs/m/66-665642_cartina-geomorfologica-valle-d-aosta-clipart-png-comuni.png`
-    );
+    setSrcImageProps(`https://www.weweb.in/data/2013/10/${nameRegion}.png`);
+    onSelectImage(`https://www.weweb.in/data/2013/10/${nameRegion}.png`);
   };
 
   const onMouseOutImage = () => {
-    setSrcImageProps(
-      `https://www.youtrend.it/wp-content/uploads/2018/03/2013-regCam.png`
-    );
-    onSelectImage(
-      `https://www.youtrend.it/wp-content/uploads/2018/03/2013-regCam.png`
-    );
+    setSrcImageProps('https://www.weweb.in/data/2013/10/cartina_italia.png');
+    onSelectImage('https://www.weweb.in/data/2013/10/cartina_italia.png');
   };
 
   return (
@@ -28,8 +20,8 @@ const Region = props => {
         shape="poly"
         coords={coords}
         href="#"
-        alt="Val d'Aosta"
-        title="Val d'Aosta"
+        alt={nameRegion}
+        title={nameRegion}
         onMouseEnter={onMouseEnterImage}
         onMouseOut={onMouseOutImage}
       />
