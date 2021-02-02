@@ -1,3 +1,3 @@
-# react-38uhth
+# react-italy
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-38uhth)
+This a test for clickable map
